@@ -14,8 +14,8 @@ body {
 }
 
 img {
-    width: 100%;
-    height: auto;
+    width: 99.9%;
+    height: 100%;
 }
 
 img[width], img[height] {
@@ -46,7 +46,8 @@ html.fsvs #fsvs-body {
     left: 0;
     z-index: 1;
     height: 100%;
-    width: 100%
+    width: 100%;
+    text-align: center;
 }
 
 html.fsvs #fsvs-body > * {
