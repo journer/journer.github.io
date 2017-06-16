@@ -164,7 +164,7 @@ html.fsvs.demo #fsvs-body > .slide pre {
     width: 100%;
     height:auto;
     position:absolute;
-    bottom:20px;
+    bottom:2.3rem;
     font-size: 12px;
 }
 
@@ -196,11 +196,12 @@ html.fsvs.demo #fsvs-body > .slide pre {
 }
 .right ul{
     width:150px;
+
 }
 .right ul li{
     width: 60px;
-    height: 25px;
-    line-height:25px;
+    height: 1rem;
+    line-height:1rem;
     float: left;
     margin:5px 10px 0 0;
     background: #20aef6;
