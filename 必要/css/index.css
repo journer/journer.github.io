@@ -1,0 +1,370 @@
+/*全局*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, article, textarea {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 14px;
+    color: #666;
+    font-family: 'Microsoft yahei', Arial;
+    min-width: 320px;
+    position: relative;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ul, li, dl {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #666
+}
+a :hover{
+    text-decoration: none;
+    color: #666
+}
+
+img {
+    border: none;
+}
+
+i {
+    font-style: normal;
+}
+
+input, textarea {
+    outline: none;
+    -webkit-appearance: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    font-family: HiraginoSansGB W3, Arial, Helvetica, sans-serif
+}
+
+input[type="radio"] {
+    box-sizing: border-box;
+
+}
+
+input[type="checkbox"] {
+    border-radius: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+a, button, input, .flex1, textarea {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+/* word-wrap 换行*/
+.word-break {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #a3a3a3;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #a3a3a3;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#a3a3a3;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#a3a3a3;
+}
+input {
+    border: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.col-xs-12,.col-xs-6,.col-xs-5,.col-xs-3,.col-xs-4,.col-xs-2,.col-xs-1{
+    padding-left:0;
+    padding-right:0;
+}
+/*-----tab-----*/
+.tabClick{
+    background: #f3f3f3;
+    overflow: hidden
+}
+.tabClick li{
+    height:40px;
+    line-height: 40px;
+    width: 25%; float: left;
+    text-align: center
+}
+.tabClick li.active{
+    color: #7f4395;
+    transition: 0.1s;
+    font-weight: bold;
+}
+.tabCon{
+    overflow: hidden;
+}
+.tabBox{
+    position: relative;
+}
+.tabList{
+    word-break: break-all;
+    width:100%;
+    float:left;
+    /*line-height:100px;*/
+    /*text-align:center;*/
+}
+.tabList .pic{
+    text-align: center;
+}
+.lineBorder{
+    height: 2px;
+    overflow: hidden;
+    border-bottom:1px solid #7f4395;
+    background: #f3f3f3
+}
+.lineDiv{
+    background: #7f4395;
+    height: 2px;
+    width: 25%;
+}
+/*-----图片切换-----*/
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > div {
+    float: left;
+    position: relative;
+}
+/*---商品描述----*/
+.desc{
+    border-top:1px solid #eee;
+    padding: 10px;
+}
+.desc .desc-up{
+    height: 50px;
+
+}
+.desc .desc-up .up-left{
+    padding-top: 10px;
+    line-height: 30px;
+}
+.desc .desc-up .share{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../image/share.png) no-repeat center bottom;
+    background-size:20px 20px ;
+}
+.desc .desc-down{
+    height: 30px;
+}
+
+/*---退换----*/
+.tuihuan {
+    height: 40px;
+    line-height: 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 10px solid #eee;
+}
+.tuihuan .bg{
+    background: url(../image/xuanze.png)no-repeat left center;
+    background-size:20px 20px;
+}
+
+/*----已选择-----*/
+.select{
+    height: 40px;
+    line-height: 30px;
+    border-bottom: 10px solid #eee;
+
+}
+.select .col-xs-10{
+    padding-left:0;
+}
+/*----商品评价------*/
+.pingjia{
+    height: 200px;
+    border-bottom: 10px solid #eee;
+}
+.pingjia .pingjia-up{
+    height: 30px;
+    line-height: 30px;
+}
+.pingjia .pingjia-up .chakan{
+    cursor:pointer;
+}
+.pingjia .pingjia-down .username{
+    padding-left:10px;
+}
+.good{
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    display: block;
+    background: url(../image/good.png) no-repeat left 10px;
+    background-size:20px 20px;
+    padding-left:20px;
+    box-sizing: content-box;
+}
+/*----店铺----*/
+.dianpu .dianpu-up{
+    height: 70px;
+}
+.dianpu .dianpu-up .shop-name{
+    padding-left:10px;
+}
+.dianpu-down{
+    box-sizing: content-box;
+}
+.dianpu-down ul{
+    margin:5px auto;
+    overflow: hidden;
+}
+.dianpu-down ul li{
+    float: left;
+    margin:0 5px;
+}
+.jiazai{
+    height: 30px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+/*-------加入/购买--------*/
+.shade{
+    display:none;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background:rgba(0,0,0,0.5);
+}
+.order{
+    height: 500px;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    background: #fff;
+
+}
+
+.order .product{
+    padding-bottom:20px;
+}
+.close-bt{
+    padding:10px;
+    cursor: pointer;
+}
+
+.order .shuxing,.order .num{
+    margin:10px 0;
+    padding-top:10px;
+    border-top: 1px solid #eeeeee;
+}
+
+.shuxing span{
+    padding:0 8px;
+    border-radius:3px;
+    line-height: 30px;
+    border: 1px dashed #8e8e8e;
+}
+.current{
+    background: #7f4395;
+    color:#fff;
+}
+.num .reduce,.num .increace,.num .number{
+    float: right;
+}
+.num .reduce,.num .increace{
+    border: 1px solid #8e8e8e;
+    padding:5px 10px;
+    display:inline-block;
+    cursor: pointer;
+}
+.num .reduce{
+    border-right: 0 ;
+}
+.num .increace{
+    border: 1px solid #000;
+    border-left: 0 ;
+}
+.num .number{
+    border: 1px solid #000;
+    padding:5px 15px;
+    display:inline-block;
+}
+.order-bottom{
+    width: 100%;
+    height: 40px;
+    line-height:40px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+}
+
+.order-bottom .order-add{
+    color:#7f4395;
+}
+.order-bottom .order-buy{
+    background:#7f4395;
+    color:#fff;
+}
+
+
+
+
+/*----固定底部栏----*/
+.fixed{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    line-height: 60px;
+    background: #fff;
+}
+.service{
+    background: url(../image/service.png) no-repeat  center 5px;
+    background-size:20px 20px;
+    cursor: pointer;
+}
+.shop{
+    background: url(../image/shop.png) no-repeat  center 5px;
+    background-size:20px 20px;
+    border-right: 1px solid #cccccc;
+    cursor: pointer;
+}
+.add{
+    line-height: 40px;
+    color:#7f4395;
+    cursor: pointer;
+}
+.buy {
+    line-height: 40px;
+    background: #7f4395;
+    color:#fff;
+    cursor: pointer;
+}
