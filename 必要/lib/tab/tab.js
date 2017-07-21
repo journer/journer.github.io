@@ -71,7 +71,7 @@ window.onload = function (){
         tabBox.style.webkitTransition='all 0s ease-in-out';
         tabBox.style.transition='all 0s ease-in-out';
     };
-    //滑动
+ /*   //滑动
     function chmove(ev){
         var stars = wrap.querySelector('.active').start;
         ev.preventDefault;
@@ -80,7 +80,7 @@ window.onload = function (){
         dist = distance;
         init.touchs(tabBox,windowWidth,tar,distance,endX);
         init.lineAnme(lineDiv,-dist/tabLi.length-endX/4);
-    };
+    };*/
     //离开
     function chend(ev){
         var str= tabBox.style.transform;
