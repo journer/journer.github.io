@@ -99,13 +99,13 @@ input {
 /*-----tab-----*/
 .tabClick{
     background: #f3f3f3;
-    overflow: hidden
+    overflow: hidden;
 }
 .tabClick li{
     height:40px;
     line-height: 40px;
     width: 25%; float: left;
-    text-align: center
+    text-align: center;
 }
 .tabClick li.active{
     color: #7f4395;
@@ -248,10 +248,17 @@ input {
     line-height: 30px;
 }
 
+/*---------商品详情---------*/
 
-
-
-
+.intro{
+    line-height: 35px;
+}
+.noun{
+    color:#8e8e8e;
+}
+.pic .mt{
+    margin-bottom:40px;
+}
 
 /*-------加入/购买--------*/
 .shade{
@@ -280,43 +287,54 @@ input {
     cursor: pointer;
 }
 
-.order .shuxing,.order .num{
+.order .shuxing,.order .number{
     margin:10px 0;
     padding-top:10px;
     border-top: 1px solid #eeeeee;
 }
 
 .shuxing span{
-    padding:0 8px;
+    padding:4px 8px;
     border-radius:3px;
     line-height: 30px;
     border: 1px dashed #8e8e8e;
+    margin:0 3px;
 }
 .current{
     background: #7f4395;
     color:#fff;
 }
-.num .reduce,.num .increace,.num .number{
-    float: right;
+.gw_num{
+    border: 1px solid #dbdbdb;
+    width: 110px;
+    line-height: 26px;
+    overflow: hidden;
 }
-.num .reduce,.num .increace{
-    border: 1px solid #8e8e8e;
-    padding:5px 10px;
-    display:inline-block;
+.gw_num em{
+    display: block;
+    height: 26px;
+    width: 26px;
+    float: left;
+    color: #7A7979;
+    border-right: 1px solid #dbdbdb;
+    text-align: center;
     cursor: pointer;
 }
-.num .reduce{
-    border-right: 0 ;
+.gw_num .num{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 52px;
+    height: 26px;
+    line-height: 24px;
+    border: 0;
 }
-.num .increace{
-    border: 1px solid #000;
-    border-left: 0 ;
+.gw_num em.zeng{
+    float: right;
+    border-right: 0;
+    border-left: 1px solid #dbdbdb;
 }
-.num .number{
-    border: 1px solid #000;
-    padding:5px 15px;
-    display:inline-block;
-}
+
 .order-bottom{
     width: 100%;
     height: 40px;
@@ -325,7 +343,9 @@ input {
     bottom: 0;
     left:0;
 }
-
+.order-bottom a{
+    text-decoration: none;
+}
 .order-bottom .order-add{
     color:#7f4395;
 }
@@ -346,16 +366,30 @@ input {
     line-height: 60px;
     background: #fff;
 }
-.service{
-    background: url(../image/service.png) no-repeat  center 5px;
-    background-size:20px 20px;
+.fenlei{
+    background: url(../image/fenlei.png) no-repeat  center 5px;
+    background-size:18px 18px;
+    border-right: 1px solid #cccccc;
     cursor: pointer;
+    font-size: 12px;
+}
+.fenlei a ,.shop a{
+    text-decoration: none;
+}
+.fenlei a:hover ,.shop a:hover{
+    color:#666;
 }
 .shop{
     background: url(../image/shop.png) no-repeat  center 5px;
     background-size:20px 20px;
     border-right: 1px solid #cccccc;
     cursor: pointer;
+    font-size: 12px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
 .add{
     line-height: 40px;
