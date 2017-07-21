@@ -1,0 +1,92 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html{
+            height:100%;
+            font-size:20px
+        }
+        body{
+            color:#666;
+            font-family: "黑体",Arial;
+            background-color:#eeeeee;
+            font-size:0.625rem;
+            line-height:30px;
+        }
+        a{
+            color:#666;
+            text-decoration: none;
+        }
+        a:active,a:hover{
+            color:#666;
+            text-decoration: none;
+        }
+        .hd{
+            height: 40px;
+            line-height: 40px;
+            background: #eeeeee;
+        }
+        .hd a{
+            color:#7f4395;
+        }
+       .adress-box{
+           margin-top:10px;
+           height:140px;
+           background: #fff;
+       }
+        .border-b{
+            border-bottom:1px solid #eeeeee
+        }
+        .editor{
+            background: url(image/editor.png)no-repeat left center;
+            background-size:18px 18px;
+        }
+        .delete{
+            background: url(image/delete.png) no-repeat left center;
+            background-size:18px 18px;
+        }
+        .delete .del{
+            background:none;
+            border:none;
+        }
+        .bottom-fixed{
+            position: fixed;
+            bottom:0;
+            height: 35px;
+            line-height:35px;
+            background: #7f4395;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+        <div class="col-xs-12 hd"><a href="gouwuche.html">< 管理收货地址</a></div>
+        <div class="container">
+            <div class="adress-box">
+                <a href="write.html">
+                <div class="col-xs-6"><h5 class="name">王健林</h5></div>
+                <div class="col-xs-6"><p class="tel">150****6542</p></div>
+                <div class="col-xs-12 border-b"><p class="adress">广东省广州市天河区棠东御富科贸园</p></div>
+                </a>
+                <div class="col-xs-6"><input type="checkbox">默认地址 </div>
+                <div class="col-xs-3 editor text-center">编辑</div>
+                <div class="col-xs-3 delete text-center"><button class="del">删除</button></div>
+
+            </div>
+    </div>
+        <a href="write.html"><div class="col-xs-12 bottom-fixed text-center">添加新地址</div></a>
+</body>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+
+</script>
+</html>
