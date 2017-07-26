@@ -5,10 +5,8 @@
     <meta name="apple-wap-web-app-capable" content="yes">
     <meta name="apple-wap-web-app-status-bar-style" content="black-translucent">
     <meta content="telephone=no" name="format-detection">
-
     <title>购物车 </title>
     <!-- ionic框架  css -->
-
     <link href="css/weixin.css" rel="stylesheet" type="text/css">
     <link href="css/ionic.min.css" rel="stylesheet" type="text/css">
     <link href="css/signin.css" rel="stylesheet" type="text/css">
@@ -175,7 +173,7 @@
             <dd>不含运费</dd>
         </dl>
         <input type="hidden" name="gcs" id="gcs">
-        <a class="settle_btn bounceIn" href="javascript:void(0);" id="confirm_cart">结算</a>
+        <a class="settle_btn bounceIn" href="javascript:void(0);" id="confirm_cart" >结算</a>
         <a class="settle_btn" href="javascript:void(0);" id="confirm_cart1" onclick="big_cart_remove()">删除</a>
 
 
@@ -187,7 +185,7 @@
             <form action="" method="post" name="payPassword" id="form_paypsw" novalidate="novalidate">
                 <div id="payPassword_container" class="alieditContainer clearfix" data-busy="0">
                     <label for="i_payPassword" class="i-block">支付密码：</label>
-                    <div class="i-block" data-error="i_error">
+                    <div class="i-block con" data-error="i_error">
                         <div class="i-block six-password">
                             <input class="i-text sixDigitPassword" id="payPassword_rsainput" type="password" autocomplete="off" required="required" value="" name="payPassword_rsainput" data-role="sixDigitPassword" tabindex="" maxlength="6" minlength="6" aria-required="true">
                             <div tabindex="0" class="sixDigitPassword-box" style="width: 180px;">
@@ -203,7 +201,7 @@
                         <span>请输入6位支付密码( 数字！)</span>
                     </div>
                 </div>
-                <input type="submit" value="提交">
+                <input type="submit" class="submit-btn" value="提交">
             </form>
         </div>
     </div>
@@ -220,6 +218,7 @@
 <script type="text/javascript" src="js/gouwuche.js"></script>
 
 <script src="js/jquery-validate.js" type="text/javascript"></script>
+
 <script type="text/javascript">
     var w,h,className;
     function getSrceenWH(){
@@ -233,22 +232,23 @@
     };
     $(window).resize();
 
-    $(function(){
+    $(function() {
         getSrceenWH();
-
         //显示弹框
-        $('a').click(function(){
+        $('.settle_btn').click(function () {
+            if($('.settle_box .all_check span').hasClass('pitch_on')){
             className = $(this).attr('class');
             $('#dialogBg').fadeIn(300);
-            $('#dialog').removeAttr('class').addClass('animated '+className+'').fadeIn();
+            $('#dialog').removeAttr('class').addClass('animated ' + className + '').fadeIn();}
         });
 
         //关闭弹窗
-        $('.claseDialogBtn').click(function(){
-            $('#dialogBg').fadeOut(300,function(){
+        $('.claseDialogBtn').click(function () {
+            $('#dialogBg').fadeOut(300, function () {
                 $('#dialog').addClass('bounceOutUp').fadeOut();
             });
         });
+    });
      var _formPay = $('#form_paypsw');
 
         _formPay.validate({
@@ -351,6 +351,5 @@
             }
         });
 
-    })
 </script>
 </html>

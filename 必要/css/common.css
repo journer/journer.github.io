@@ -316,21 +316,30 @@ header{width:90%;text-align:center;padding:5%;letter-spacing:2px;color:#333;font
     margin: 0 auto;
     display: none;
     background-color: #ffffff;
-    position: fixed; top: 50%;
+    position: fixed;
+    top: 50%;
     left: 50%;
+    color:#333;
     margin: -120px 0 0 -150px;
     z-index: 10000; border: 1px solid #ccc;
     border-radius: 10px; -webkit-border-radius: 10px;
     box-shadow: 3px 2px 4px rgba(0,0,0,0.2);
     -webkit-box-shadow: 3px 2px 4px rgba(0,0,0,0.2);
 }
+/*.settle_box .settle_btn{
+    color:#000;
+}*/
 .dialogTop{
     width:90%;
     margin:0 auto;
-    border-bottom:1px dotted #ccc;
+    /*border-bottom:1px dotted #ccc;*/
     letter-spacing:1px;padding:10px 0;
     text-align:right;
 }
+.dialogIco{width:50px;height:50px;position:absolute;top:-25px;left:50%;margin-left:-25px;}
+.editInfos{padding:15px 0;}
+
+.submitBtn{width:90px;height:30px;line-height:30px;cursor:pointer;margin-top:10px;display:inline-block;border-radius:5px;-webkit-border-radius:5px;text-align:center;background-color:#428bca;color:#fff;box-shadow: 0 -3px 0 #2a6496 inset;-webkit-box-shadow: 0 -3px 0 #2a6496 inset;}
 
 
 .clearfix:after {
@@ -342,8 +351,17 @@ header{width:90%;text-align:center;padding:5%;letter-spacing:2px;color:#333;font
 }
 .alieditContainer{
     position: relative;
+    margin-top:20px;
 }
-
+.six-password {
+    position: relative;
+    left: 20%;
+    height: 40px;
+    width: 180px;
+    padding: 4px 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
 .sixDigitPassword {
     position: absolute;
     left: -122px;
@@ -355,28 +373,26 @@ header{width:90%;text-align:center;padding:5%;letter-spacing:2px;color:#333;font
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     -webkit-user-select: initial;
-    outline: 'none';
+    outline:none;
     z-index: 999;
     opacity:0;
     filter:alpha(opacity=0);
 }
 
 .sixDigitPassword-box {
-
-    cursor:text;
+    cursor: text;
     background: #fff;
     outline: none;
     position: relative;
-    padding: 8px 0;
-    height: 15px;
+    padding: 4px 0;
+    height: 30px;
     border: 1px solid #cccccc;
     border-radius: 2px;
 }
 .sixDigitPassword-box i {
     float: left;
     display: block;
-    padding: 4px 0;
-    height: 7px;
+    padding: 7px 0;
     border-left: 1px solid #cccccc;
 }
 .sixDigitPassword-box .active {
@@ -396,11 +412,11 @@ header{width:90%;text-align:center;padding:5%;letter-spacing:2px;color:#333;font
 .sixDigitPassword-box span {
     position: absolute;
     display: block;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     height: 30px;
     border: 1px solid rgba(82, 168, 236, .8);
-    border: 1px solid #00ffff\9;
+    border: 1px solid #00ffff;
     border-radius: 2px;
     visibility: hidden;
     -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.75), 0 0 8px rgba(82, 168, 236, 0.6);
@@ -410,13 +426,17 @@ header{width:90%;text-align:center;padding:5%;letter-spacing:2px;color:#333;font
     margin-top: 8px;
 }
 .i-block{
-    display:inline-block;
+    display:block;
 }
-.six-password{
-    position: relative;
-    height:33px;
-    width:182px;
-    overflow: hidden;
-    vertical-align: middle;
-
+.con{
+    text-align: center;
+}
+.submit-btn {
+    bottom: 15px;
+    left: 18%;
+    position: absolute;
+    width: 65%;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 25px;
 }
