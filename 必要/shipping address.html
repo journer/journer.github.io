@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <title>Title</title>
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    }
+    html{
+    height:100%;
+    font-size:20px
+    }
+    body{
+    color:#000;
+    font-family: "黑体",Arial;
+    font-size:0.625rem;
+    line-height:30px;
+    }
+    a{
+    color:#fff;
+    text-decoration: none;
+    }
+    a:active,a:hover{
+    color:#fff;
+    text-decoration: none;
+    }
+    input, textarea {
+        outline: none;
+        -webkit-appearance: none;
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        font-family: HiraginoSansGB W3, Arial, Helvetica, sans-serif
+    }
+
+    input[type="radio"] {
+        box-sizing: border-box;
+    }
+
+    input[type="checkbox"] {
+        border-radius: 0;
+    }
+    .header{
+        height: 40px;
+        line-height: 40px;
+        background: #7f4395;
+
+    }
+    .txt{
+        border: 0;
+        height: 35px;
+        line-height:35px;
+        width: 80%;
+        float: right;
+
+    }
+        .border-bottom{
+            border-bottom:1px solid #eeeeee ;
+            height: 40px;
+            line-height:40px;
+            z-index: 99999;
+        }
+        .spe{
+            height: 40px;
+            line-height:40px;
+            border-bottom:5px solid #eeeeee ;
+            margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+        <div class="col-xs-6 "><a href="dizhi.html">< 添加新地址</a></div>
+        <div class="col-xs-6 text-right"><a href="dizhi.html">保存</a></div>
+</div>
+<div class="detail">
+        <div class="col-xs-12 border-bottom"><span>收货人</span><input type="text" class="txt"></div>
+        <div class="col-xs-12 border-bottom"><span>联系电话</span><input type="text" class="txt"></div>
+        <div class="col-xs-12 border-bottom"><span>所在地区</span><input type="text" class="txt"></div>
+        <div class="col-xs-12 border-bottom"><span>街道</span><input type="text" class="txt"></div>
+        <div class="col-xs-12 spe"><span>详细地址</span><input type="text" class="txt" ></div>
+        <div class="col-xs-6"><span>默认地址</span></div><div class="col-xs-6 text-right"><input type="checkbox"></div>
+</div>
+</body>
+</html>

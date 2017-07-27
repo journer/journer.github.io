@@ -37,13 +37,13 @@ img{-ms-interpolation-mode:bicubic; max-width:100%;}/*防止windows缩放图片�
 /*组合商品结束*/
 
 .settle_box_h{ height:60px;}
-.settle_box{ background:#fff; position:fixed; left:0px; bottom:0px; overflow:hidden; z-index:2;width: 100%;padding:0 0 0 4%;border-top: solid 1px #e6e6e6;}
+.settle_box{ background:#fff; position:fixed; left:0; bottom:0; overflow:hidden; z-index:2;width: 100%;padding:0 0 0 4%;border-top: solid 1px #e6e6e6;}
 .settle_box .all_check,.settle_box .total_amount{ float:left;}
 .settle_box .all_check{ width:17%;margin-bottom:0;margin-top: 15px}
 .settle_box .all_check dd{ color:#999999; font-size:12px;}
 .settle_box .all_check span{ width:20px; height:20px; border:solid 1px #a2a2a2; vertical-align:middle; border-radius:50%;float: left;}
 .settle_box .all_check .disabled{ background:#e1e1e1;border:solid 1px #e1e1e1;}
-.settle_box .all_check  .pitch_on{ background:url(../images/s_goods_pitch.png) no-repeat center center #7f4395;border:solid 1px #7f4395; background-size:22px 22px; }
+.settle_box .all_check  .pitch_on{ background:url(../image/good-pitch.png) no-repeat center center #7f4395;border:solid 1px #7f4395; background-size:16px 16px; }
 .settle_box .total_amount {color: #999;font-size: 14px;margin: 0;width: 50%;text-align: right;margin-top: 5px;padding-right: 2%;}
 .settle_box .total_amount dd{ margin-top:1px;clear: both;font-size: 0.6rem;}
 .settle_box .total_amount dt p {color: #7f4395;font-size: 0.8rem;float: right;line-height: 20px;}
@@ -51,6 +51,6 @@ img{-ms-interpolation-mode:bicubic; max-width:100%;}/*防止windows缩放图片�
 .settle_box .total_amount dt {font-weight: initial;}
 .settle_box .settle_btn{ float:right; width:33%; background:#7f4395; color:#fff; padding:17px 0; text-align:center;font-size: 0.7rem;}
 #confirm_cart1 {display: none;}
-.select .pitch_on{ background:url(../images/s_goods_pitch.png) no-repeat center center #7f4395;border:solid 1px #7f4395; background-size:22px 22px; }
+.select .pitch_on{ background:url(../image/good-pitch.png) no-repeat center center #7f4395;border:solid 1px #7f4395; background-size:16px 16px; }
 .account_info li{ overflow: hidden;position: relative; border-bottom:solid 1px #eee; padding: 0 4%;line-height: 45px; }
 .account_info li .info_name{color:#9a9a9a;float: left; display:inline-block;margin-right: 5%;color: #333; font-size: 0.7rem;}
